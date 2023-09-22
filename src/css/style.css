@@ -1,0 +1,130 @@
+
+
+body {
+background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    min-height: 100vh;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 2%;
+  margin: 0 auto;
+  border-bottom: rgb(0, 80, 172) solid;
+}
+
+nav {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo-2 {
+    padding: 10px ;
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+   padding: 10px 20px; 
+   text-decoration: none;
+   font-size: 22px;
+   color: white;
+   border-radius: 30px;
+   transition: 0.6s;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+}
+
+.box {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width:   27%;
+    
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputbox {
+    position: relative;
+}
+
+.inputuser {
+   background: none;
+   border: none;
+   border-bottom: 1px solid white;
+   outline: none;
+   color: white;
+   font-size: 15px;
+   width: 98%;
+   letter-spacing: 2px;
+   margin: 3px
+}
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+#data-nacimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none; 
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    width: 90%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+.inputuser:focus ~.labelinput,
+.inputuser:valid ~ .labelinput {
+     top: -20px;
+     font-size: 12px;
+     color: dodgerblue;
+}
